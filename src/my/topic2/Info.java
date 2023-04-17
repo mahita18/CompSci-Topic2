@@ -11,7 +11,7 @@ package my.topic2;
 public class Info extends javax.swing.JFrame {
     int current=0;
     String[] title = {"Positive", "Negative", "Action", "Initiative"};
-    
+    Result userResult = new Result();
     
     /**
      * Creates new form Info
@@ -67,7 +67,7 @@ public class Info extends javax.swing.JFrame {
         jTextAreaInfo.setBackground(new java.awt.Color(225, 255, 225));
         jTextAreaInfo.setColumns(20);
         jTextAreaInfo.setRows(5);
-        jTextAreaInfo.setText("Information text");
+        jTextAreaInfo.setText("Information");
         jScrollPaneInfo.setViewportView(jTextAreaInfo);
 
         javax.swing.GroupLayout jPanelInfoLayout = new javax.swing.GroupLayout(jPanelInfo);
@@ -199,8 +199,14 @@ public class Info extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonInfoActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        jPanelInfo.setVisible(true);
-        jPanelQuiz.setVisible(false);
+        if (current<4){
+            userResult.markQuiz(title, title);
+            jPanelInfo.setVisible(true);
+            jPanelQuiz.setVisible(false);
+            current++;
+        }
+        else
+            System.exit(0);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldActionPerformed
@@ -222,6 +228,7 @@ public class Info extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Info().setVisible(true);
+                
             }
         });
     }

@@ -119,7 +119,7 @@
                 </Property>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="Information text"/>
+                <Property name="text" type="java.lang.String" value="Information"/>
               </Properties>
             </Component>
           </SubComponents>

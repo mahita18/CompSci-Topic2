@@ -25,10 +25,16 @@ public class Result {
                 isCorrect[currentQ]=true;
             else
                 isCorrect[currentQ]=false;
+            currentQ++;
         }
+        
     }
     
     public double markTotal(){
-        return (double)score;
+        for(boolean item:isCorrect){
+            if (item==true)
+                score++;
+        }
+        return (score/12);
     }
 }
