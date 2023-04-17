@@ -10,14 +10,16 @@ package my.topic2;
  */
 public class Info extends javax.swing.JFrame {
     int current;
+    String[] title = {"Positive", "Negative", "Action"};
+    
     
     /**
      * Creates new form Info
      */
-    public Info(String title) {
-        current=0;
+    public Info(int y) {
+        current=y;
         initComponents();
-        jLabel1.setText(title);
+        jLabel1.setText(title[current]);
     }
 
     /**
@@ -53,7 +55,7 @@ public class Info extends javax.swing.JFrame {
         jLabel1.setText("Positives");
 
         jTextArea1.setEditable(false);
-        jTextArea1.setBackground(new java.awt.Color(228, 248, 236));
+        jTextArea1.setBackground(new java.awt.Color(225, 255, 225));
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jTextArea1.setText("This is where information will be");
@@ -103,34 +105,17 @@ public class Info extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
-        switch(current){
-            case 0:
-                Question quizPositive = new Question();
-                quizPositive.setVisible(true);
-                break;
-            case 1:
-                Question quizNegative = new Question();
-                quizNegative.setVisible(true);
-
-                break;
-            case 2:
-                Question quizAction = new Question();
-                quizAction.setVisible(true);
-                break;
-            default:
-                Question quizInitiative = new Question();
-                quizInitiative.setVisible(true);
-
-        }
-        setVisible(false);
+         
+     Question quiz = new Question(current);
+     quiz.setVisible(true);
+     dispose();
         
         
     }//GEN-LAST:event_jButton1ActionPerformed
