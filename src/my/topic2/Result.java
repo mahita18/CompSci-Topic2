@@ -19,20 +19,16 @@ public class Result {
         currentQ = 0;
     }
     
-    public void markQuiz(String[] response, String Q1Ans, String Q2Ans, Boolean Q3Ans){
+    public void markQuiz(String[] response, String[] answer){
         for (int z=0; z<3; z++){
-            if(response[z].equals(Q1Ans))
+            if(response[z].equals(answer[z]))
                 isCorrect[currentQ]=true;
             else
                 isCorrect[currentQ]=false;
         }
     }
     
-    public void setResponse(int questNum){
-        isCorrect[questNum] = true;
-    }
-    
     public double markTotal(){
-        return (score/12);
+        return (double)score;
     }
 }
