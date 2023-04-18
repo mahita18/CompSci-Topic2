@@ -9,7 +9,7 @@ package my.topic2;
  * @author mahit
  */
 public class Positive extends javax.swing.JFrame {
-    int current=0;
+    String[] current = new String[12];
     
     /**
      * Creates new form Info
@@ -192,10 +192,12 @@ public class Positive extends javax.swing.JFrame {
     private void jButtonInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonInfoActionPerformed
         jPanelInfoPositive.setVisible(false);
         jPanelPositive.setVisible(true);
+        
     }//GEN-LAST:event_jButtonInfoActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         Negative infoNegative = new Negative();
+        dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
