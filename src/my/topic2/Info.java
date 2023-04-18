@@ -201,12 +201,14 @@ public class Info extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         if (current<4){
             userResult.markQuiz(title, title);
-            jPanelInfo.setVisible(true);
             jPanelQuiz.setVisible(false);
-            current++;
+            current++;            
+            jPanelInfo.setVisible(true);
         }
-        else
+        else{
+            userResult.markTotal();
             System.exit(0);
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldActionPerformed
@@ -228,9 +230,9 @@ public class Info extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Info().setVisible(true);
-                
             }
         });
+        
     }
     
    
