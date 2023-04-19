@@ -13,13 +13,19 @@ public class Result {
     boolean[ ] isCorrect = new boolean[12];	
     int score;
     int currentQ;
+    String[] response = new String[3];
+    String[] answer = new String[3];
     
     public Result(){
         score = 0;
         currentQ = 0;
+        
+        
     }
     
-    public void markQuiz(String[] response, String[] answer){
+    public void markQuiz(String[] res, String[] ans){
+        response = res;
+        answer = ans;
         for (int z=0; z<3; z++){
             if(response[z].equals(answer[z]))
                 isCorrect[currentQ]=true;

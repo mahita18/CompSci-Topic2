@@ -14,7 +14,7 @@ public class Action extends javax.swing.JFrame {
     /**
      * Creates new form Info
      */
-    public Action() {
+    public Action(Result result3) {
         initComponents();
         
     }
@@ -59,42 +59,46 @@ public class Action extends javax.swing.JFrame {
         });
 
         jLabelInfo.setFont(new java.awt.Font("OCR A Extended", 0, 24)); // NOI18N
-        jLabelInfo.setText("Positive");
+        jLabelInfo.setText("Action");
 
         jTextAreaPositive.setEditable(false);
         jTextAreaPositive.setBackground(new java.awt.Color(225, 255, 225));
         jTextAreaPositive.setColumns(20);
+        jTextAreaPositive.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jTextAreaPositive.setRows(5);
+        jTextAreaPositive.setText("Reduce Impact\nSetting time limits and balancing out your lifestyle\nTurning off devices 1 hour before bed\nTurning off devices when not in use\nMaintain a healthy posture and desk setup\n\nInitiatives\nRecycling Organizations  for businesses and homes to safely dispose electronic waste\nWaste is responsibly disposed\nPartner with Businesses, like Best Buy, have electronic recycling available\n");
         jScrollPaneIPositive.setViewportView(jTextAreaPositive);
 
         javax.swing.GroupLayout jPanelInfoActionLayout = new javax.swing.GroupLayout(jPanelInfoAction);
         jPanelInfoAction.setLayout(jPanelInfoActionLayout);
         jPanelInfoActionLayout.setHorizontalGroup(
             jPanelInfoActionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelInfoActionLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButtonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
             .addGroup(jPanelInfoActionLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
                 .addGroup(jPanelInfoActionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelInfoActionLayout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(jLabelInfo))
+                        .addComponent(jScrollPaneIPositive, javax.swing.GroupLayout.PREFERRED_SIZE, 394, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
+                        .addComponent(jButtonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(16, 16, 16))
                     .addGroup(jPanelInfoActionLayout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addComponent(jScrollPaneIPositive, javax.swing.GroupLayout.PREFERRED_SIZE, 462, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(61, Short.MAX_VALUE))
+                        .addComponent(jLabelInfo)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanelInfoActionLayout.setVerticalGroup(
             jPanelInfoActionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelInfoActionLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabelInfo)
-                .addGap(31, 31, 31)
-                .addComponent(jScrollPaneIPositive, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
-                .addComponent(jButtonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
+                .addGroup(jPanelInfoActionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelInfoActionLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButtonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(16, 16, 16))
+                    .addGroup(jPanelInfoActionLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPaneIPositive, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(26, Short.MAX_VALUE))))
         );
 
         getContentPane().add(jPanelInfoAction, "card2");

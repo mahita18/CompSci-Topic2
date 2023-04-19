@@ -45,23 +45,20 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  <Component id="jButtonInfo" min="-2" pref="72" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-              </Group>
-              <Group type="102" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                          <Component id="jLabelInfo" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPaneIPositive" min="-2" pref="394" max="-2" attributes="0"/>
+                          <EmptySpace pref="66" max="32767" attributes="0"/>
+                          <Component id="jButtonInfo" min="-2" pref="72" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                          <Component id="jScrollPaneIPositive" min="-2" pref="462" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="jLabelInfo" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="61" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -70,11 +67,18 @@
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                   <Component id="jLabelInfo" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                  <Component id="jScrollPaneIPositive" min="-2" pref="160" max="-2" attributes="0"/>
-                  <EmptySpace pref="97" max="32767" attributes="0"/>
-                  <Component id="jButtonInfo" min="-2" pref="32" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jButtonInfo" min="-2" pref="32" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jScrollPaneIPositive" min="-2" pref="292" max="-2" attributes="0"/>
+                          <EmptySpace pref="26" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
@@ -101,7 +105,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="OCR A Extended" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Positive"/>
+            <Property name="text" type="java.lang.String" value="Action"/>
           </Properties>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPaneIPositive">
@@ -118,7 +122,11 @@
                   <Color blue="e1" green="ff" red="e1" type="rgb"/>
                 </Property>
                 <Property name="columns" type="int" value="20"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="14" style="0"/>
+                </Property>
                 <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="Reduce Impact&#xa;Setting time limits and balancing out your lifestyle&#xa;Turning off devices 1 hour before bed&#xa;Turning off devices when not in use&#xa;Maintain a healthy posture and desk setup&#xa;&#xa;Initiatives&#xa;Recycling Organizations  for businesses and homes to safely dispose electronic waste&#xa;Waste is responsibly disposed&#xa;Partner with Businesses, like Best Buy, have electronic recycling available&#xa;"/>
               </Properties>
             </Component>
           </SubComponents>
