@@ -34,6 +34,7 @@ public class Positive extends javax.swing.JFrame {
         jLabelInfo = new javax.swing.JLabel();
         jScrollPaneIPositive = new javax.swing.JScrollPane();
         jTextAreaPositive = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
         jPanelPositive = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
@@ -65,39 +66,44 @@ public class Positive extends javax.swing.JFrame {
         jTextAreaPositive.setEditable(false);
         jTextAreaPositive.setBackground(new java.awt.Color(225, 255, 225));
         jTextAreaPositive.setColumns(20);
-        jTextAreaPositive.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextAreaPositive.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         jTextAreaPositive.setRows(5);
-        jTextAreaPositive.setText("Technology allows online appointments.\nTechnology is also used to help our body function through \ndevices, such as the pacemaker.\nKeeping track of health levels (ex. diabetes)\nMRI, X-Ray \n\nSensors, such as the MethaneSAT satellite (used to track methane \nemissions), are used to track and predict our environmental state.\nElectric Vehicle\n");
+        jTextAreaPositive.setTabSize(2);
+        jTextAreaPositive.setText("Medical devices\n\t- Pacemakers help our heart function properly\n\t- Technology used to monitor glucose levels\n\t- MRI and X-Ray used for imaging\nTechnology also helps doctors communicate with patients through online appointments.\n\n\nSensors, such as the MethaneSAT satellite (which tracks methane emissions), are used to \ntrack and predict our environmental state. Production of electric vehicles help reduce our \ncarbon emissions.");
         jScrollPaneIPositive.setViewportView(jTextAreaPositive);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/topic2/msat.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPanelInfoPositiveLayout = new javax.swing.GroupLayout(jPanelInfoPositive);
         jPanelInfoPositive.setLayout(jPanelInfoPositiveLayout);
         jPanelInfoPositiveLayout.setHorizontalGroup(
             jPanelInfoPositiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelInfoPositiveLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButtonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
-            .addGroup(jPanelInfoPositiveLayout.createSequentialGroup()
-                .addGroup(jPanelInfoPositiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanelInfoPositiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanelInfoPositiveLayout.createSequentialGroup()
                         .addGap(22, 22, 22)
-                        .addComponent(jLabelInfo))
-                    .addGroup(jPanelInfoPositiveLayout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addComponent(jScrollPaneIPositive, javax.swing.GroupLayout.PREFERRED_SIZE, 472, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(51, Short.MAX_VALUE))
+                        .addGroup(jPanelInfoPositiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelInfo)
+                            .addComponent(jScrollPaneIPositive)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelInfoPositiveLayout.createSequentialGroup()
+                        .addGap(118, 118, 118)
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                        .addComponent(jButtonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(20, 20, 20))
         );
         jPanelInfoPositiveLayout.setVerticalGroup(
             jPanelInfoPositiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelInfoPositiveLayout.createSequentialGroup()
+            .addGroup(jPanelInfoPositiveLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabelInfo)
-                .addGap(31, 31, 31)
-                .addComponent(jScrollPaneIPositive, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
-                .addComponent(jButtonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPaneIPositive, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelInfoPositiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonInfo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelInfoPositive, "card2");
@@ -138,25 +144,21 @@ public class Positive extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelPositiveLayout.createSequentialGroup()
                 .addGroup(jPanelPositiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelPositiveLayout.createSequentialGroup()
+                        .addGap(262, 486, Short.MAX_VALUE)
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelPositiveLayout.createSequentialGroup()
                         .addGap(26, 26, 26)
                         .addGroup(jPanelPositiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanelPositiveLayout.createSequentialGroup()
                                 .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 466, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 476, Short.MAX_VALUE))
+                            .addComponent(jQuestion7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(jPanelPositiveLayout.createSequentialGroup()
                                 .addGroup(jPanelPositiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jQuestion9)
                                     .addComponent(jQuestion8, javax.swing.GroupLayout.PREFERRED_SIZE, 482, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(jQuestion7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelPositiveLayout.createSequentialGroup()
-                        .addGap(262, 476, Short.MAX_VALUE)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addGap(19, 19, 19))
-            .addGroup(jPanelPositiveLayout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addComponent(jComboBoxPos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanelPositiveLayout.createSequentialGroup()
                 .addGroup(jPanelPositiveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelPositiveLayout.createSequentialGroup()
@@ -164,7 +166,10 @@ public class Positive extends javax.swing.JFrame {
                         .addComponent(jTextFieldPos1, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanelPositiveLayout.createSequentialGroup()
                         .addGap(48, 48, 48)
-                        .addComponent(jTextFieldPos2, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jTextFieldPos2, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelPositiveLayout.createSequentialGroup()
+                        .addGap(51, 51, 51)
+                        .addComponent(jComboBoxPos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanelPositiveLayout.setVerticalGroup(
@@ -180,11 +185,11 @@ public class Positive extends javax.swing.JFrame {
                 .addComponent(jQuestion8)
                 .addGap(18, 18, 18)
                 .addComponent(jTextFieldPos2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
                 .addComponent(jQuestion9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jComboBoxPos3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
+                .addGap(14, 14, 14)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19))
         );
@@ -240,6 +245,7 @@ public class Positive extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButtonInfo;
     private javax.swing.JComboBox<String> jComboBoxPos3;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabelInfo;
     private javax.swing.JPanel jPanelInfoPositive;

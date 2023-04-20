@@ -12,8 +12,7 @@ import java.util.*;
  */
 public class Negative extends javax.swing.JFrame {
     Result negResult;
-    ArrayList negAnswer = new ArrayList();
-
+    String[] negAnswer = {"53.6", "All of the Above", "true", "false"};
     
     /**
      * Creates new form Info
@@ -21,9 +20,6 @@ public class Negative extends javax.swing.JFrame {
     public Negative(Result result2) {
         initComponents();
         negResult = result2;
-        negAnswer.add(53.6);        
-        negAnswer.add(" ");
-        negAnswer.add("false");
     }
 
     /**
@@ -40,6 +36,7 @@ public class Negative extends javax.swing.JFrame {
         jLabelInfo = new javax.swing.JLabel();
         jScrollPaneIPositive = new javax.swing.JScrollPane();
         jTextAreaPositive = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
         jPanelQuizNegative = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
@@ -49,6 +46,8 @@ public class Negative extends javax.swing.JFrame {
         jQuestion7 = new javax.swing.JLabel();
         jQuestion8 = new javax.swing.JLabel();
         jQuestion9 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.CardLayout());
@@ -71,10 +70,13 @@ public class Negative extends javax.swing.JFrame {
         jTextAreaPositive.setEditable(false);
         jTextAreaPositive.setBackground(new java.awt.Color(225, 255, 225));
         jTextAreaPositive.setColumns(20);
-        jTextAreaPositive.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextAreaPositive.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         jTextAreaPositive.setRows(5);
-        jTextAreaPositive.setText("Pollution of discarded technologies\nIn 2020, 53.6 million tons of e-waste being created globally\nMining of natural resources, and its effects on the miners\n\nHealth effects of increased use\nEye strain\nHeadaches\nNeck, shoulder and back pain\nAltered sleeping patterns\nMental Health, isolation\nHearing Loss\n");
+        jTextAreaPositive.setTabSize(2);
+        jTextAreaPositive.setText("Pollution of discarded technologies...\n\t- taints drinking water and farm land\n\t- disrupts aqutic environments\nIn 2020, 53.6 million tons of e-waste being created globally\n\n\nMinerals, such as silver, have to be mined\n\t- Depleting resources and damaging the environment\n\t- Concerns for the miners' health\n\n\nIncreased use of technology can lead to...\n\t- Eye strain\t\t\t\t\t\t\t\t\t\t \t\t\t- Headaches\n\t- Altered sleeping patterns\t\t\t- Feeling isolated\n\t- Back pain\n");
         jScrollPaneIPositive.setViewportView(jTextAreaPositive);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/topic2/ewaste1.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPanelInfoNegativeLayout = new javax.swing.GroupLayout(jPanelInfoNegative);
         jPanelInfoNegative.setLayout(jPanelInfoNegativeLayout);
@@ -84,28 +86,32 @@ public class Negative extends javax.swing.JFrame {
                 .addGap(22, 22, 22)
                 .addGroup(jPanelInfoNegativeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelInfoNegativeLayout.createSequentialGroup()
-                        .addComponent(jScrollPaneIPositive, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButtonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(16, 16, 16))
                     .addGroup(jPanelInfoNegativeLayout.createSequentialGroup()
-                        .addComponent(jLabelInfo)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGroup(jPanelInfoNegativeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelInfo)
+                            .addGroup(jPanelInfoNegativeLayout.createSequentialGroup()
+                                .addComponent(jScrollPaneIPositive, javax.swing.GroupLayout.PREFERRED_SIZE, 369, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(21, Short.MAX_VALUE))))
         );
         jPanelInfoNegativeLayout.setVerticalGroup(
             jPanelInfoNegativeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelInfoNegativeLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabelInfo)
+                .addGap(18, 18, 18)
                 .addGroup(jPanelInfoNegativeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelInfoNegativeLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(16, 16, 16))
-                    .addGroup(jPanelInfoNegativeLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPaneIPositive, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(40, Short.MAX_VALUE))))
+                        .addGap(0, 10, Short.MAX_VALUE)
+                        .addComponent(jLabel1)
+                        .addGap(35, 35, 35)
+                        .addComponent(jButtonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPaneIPositive))
+                .addGap(16, 16, 16))
         );
 
         getContentPane().add(jPanelInfoNegative, "card2");
@@ -131,7 +137,12 @@ public class Negative extends javax.swing.JFrame {
             }
         });
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Back Pain", "Eye Strain", "Headaches", "All Of The Above" }));
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Back Pain", "Eye Strain", "Headaches", "All of the Above" }));
+        jComboBox5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox5ActionPerformed(evt);
+            }
+        });
 
         jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "true", "false" }));
 
@@ -139,14 +150,20 @@ public class Negative extends javax.swing.JFrame {
 
         jQuestion8.setText("Increased use of technology can lead to...");
 
-        jQuestion9.setText("Polution");
+        jQuestion9.setText("True or False: The process of mining can damage the natural environment.");
+
+        jLabel2.setText("True or False: E-Waste does not negatively affect farm land.");
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "true", "false" }));
 
         javax.swing.GroupLayout jPanelQuizNegativeLayout = new javax.swing.GroupLayout(jPanelQuizNegative);
         jPanelQuizNegative.setLayout(jPanelQuizNegativeLayout);
         jPanelQuizNegativeLayout.setHorizontalGroup(
             jPanelQuizNegativeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelQuizNegativeLayout.createSequentialGroup()
-                .addGap(262, 476, Short.MAX_VALUE)
+                .addGap(46, 46, 46)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19))
             .addGroup(jPanelQuizNegativeLayout.createSequentialGroup()
@@ -156,9 +173,10 @@ public class Negative extends javax.swing.JFrame {
                         .addGroup(jPanelQuizNegativeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel4)
                             .addComponent(jQuestion7, javax.swing.GroupLayout.PREFERRED_SIZE, 498, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap(82, Short.MAX_VALUE))
                     .addGroup(jPanelQuizNegativeLayout.createSequentialGroup()
                         .addGroup(jPanelQuizNegativeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
                             .addComponent(jQuestion9)
                             .addComponent(jQuestion8, javax.swing.GroupLayout.PREFERRED_SIZE, 482, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE))))
@@ -168,10 +186,10 @@ public class Negative extends javax.swing.JFrame {
                         .addGap(49, 49, 49)
                         .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanelQuizNegativeLayout.createSequentialGroup()
-                        .addGap(51, 51, 51)
+                        .addGap(47, 47, 47)
                         .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanelQuizNegativeLayout.createSequentialGroup()
-                        .addGap(50, 50, 50)
+                        .addGap(47, 47, 47)
                         .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -182,19 +200,27 @@ public class Negative extends javax.swing.JFrame {
                 .addComponent(jLabel4)
                 .addGap(28, 28, 28)
                 .addComponent(jQuestion7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
+                .addGap(18, 18, 18)
                 .addComponent(jQuestion8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addGap(27, 27, 27)
                 .addComponent(jQuestion9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19))
+                .addGap(26, 26, 26)
+                .addComponent(jLabel2)
+                .addGroup(jPanelQuizNegativeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelQuizNegativeLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(19, 19, 19))
+                    .addGroup(jPanelQuizNegativeLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         getContentPane().add(jPanelQuizNegative, "card4");
@@ -208,15 +234,20 @@ public class Negative extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonInfoActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        String[] negResponse = {};
-        negResult.markQuiz(negResponse, negResponse);
+        String[] negResponse = {jTextField2.getText(), jComboBox5.getSelectedItem().toString(), jComboBox6.getSelectedItem().toString()};
+        negResult.markQuiz(negResponse, negAnswer);
         Action infoAct = new Action(negResult);
+        infoAct.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jComboBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -244,8 +275,11 @@ public class Negative extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButtonInfo;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabelInfo;
     private javax.swing.JPanel jPanelInfoNegative;

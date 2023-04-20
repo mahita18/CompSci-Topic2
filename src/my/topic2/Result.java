@@ -38,11 +38,11 @@ public class Result {
         
     }
     
-    public double markTotal(){
+    public String markTotal(){
         for(boolean item:isCorrect){
             if (item==true)
                 score++;
         }
-        return (score/12);
+        return ("Your final score is " + score + "/11");
     }
 }
