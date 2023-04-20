@@ -28,7 +28,7 @@ public class Result {
         answer = ans;
         int x = 0;
         for (String item:response){            
-            if(item.equals(answer[x]))
+            if(item.equalsIgnoreCase(answer[x]))
                 isCorrect[currentQ]=true;
             else
                 isCorrect[currentQ]=false;

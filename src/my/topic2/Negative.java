@@ -73,7 +73,7 @@ public class Negative extends javax.swing.JFrame {
         jTextAreaPositive.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         jTextAreaPositive.setRows(5);
         jTextAreaPositive.setTabSize(2);
-        jTextAreaPositive.setText("Pollution of discarded technologies...\n\t- taints drinking water and farm land\n\t- disrupts aqutic environments\nIn 2020, 53.6 million tons of e-waste being created globally\n\n\nMinerals, such as silver, have to be mined\n\t- Depleting resources and damaging the environment\n\t- Concerns for the miners' health\n\n\nIncreased use of technology can lead to...\n\t- Eye strain\t\t\t\t\t\t\t\t\t\t \t\t\t- Headaches\n\t- Altered sleeping patterns\t\t\t- Feeling isolated\n\t- Back pain\n");
+        jTextAreaPositive.setText("Pollution of discarded technologies...\n\t- taints drinking water and farm land\n\t- disrupts aquatic environments\nIn 2020, 53.6 million tons of e-waste was created globally\n\n\nMinerals, such as silver, have to be mined, which...\n\t- Deplete resources and damage the environment\n\t- Raise concerns for the miners' safety\n\n\nIncreased use of technology can lead to...\n\t- Eye strain\t\t\t\t\t\t\t\t\t\t \t\t\t- Headaches\n\t- Altered sleeping patterns\t\t\t- Feeling isolated\n\t- Back pain\n");
         jScrollPaneIPositive.setViewportView(jTextAreaPositive);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/topic2/ewaste1.jpg"))); // NOI18N
@@ -146,7 +146,7 @@ public class Negative extends javax.swing.JFrame {
 
         jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "true", "false" }));
 
-        jQuestion7.setText("How many tons of e-waste did the world produce in 2020?");
+        jQuestion7.setText("How many tons (in millions) of e-waste did the world produce in 2020?");
 
         jQuestion8.setText("Increased use of technology can lead to...");
 
@@ -234,7 +234,7 @@ public class Negative extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonInfoActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        String[] negResponse = {jTextField2.getText(), jComboBox5.getSelectedItem().toString(), jComboBox6.getSelectedItem().toString()};
+        String[] negResponse = {jTextField2.getText(), jComboBox5.getSelectedItem().toString(), jComboBox6.getSelectedItem().toString(), jComboBox1.getSelectedItem().toString()};
         negResult.markQuiz(negResponse, negAnswer);
         Action infoAct = new Action(negResult);
         infoAct.setVisible(true);

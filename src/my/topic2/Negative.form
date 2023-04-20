@@ -132,7 +132,7 @@
                 </Property>
                 <Property name="rows" type="int" value="5"/>
                 <Property name="tabSize" type="int" value="2"/>
-                <Property name="text" type="java.lang.String" value="Pollution of discarded technologies...&#xa;&#x9;- taints drinking water and farm land&#xa;&#x9;- disrupts aqutic environments&#xa;In 2020, 53.6 million tons of e-waste being created globally&#xa;&#xa;&#xa;Minerals, such as silver, have to be mined&#xa;&#x9;- Depleting resources and damaging the environment&#xa;&#x9;- Concerns for the miners&apos; health&#xa;&#xa;&#xa;Increased use of technology can lead to...&#xa;&#x9;- Eye strain&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; &#x9;&#x9;&#x9;- Headaches&#xa;&#x9;- Altered sleeping patterns&#x9;&#x9;&#x9;- Feeling isolated&#xa;&#x9;- Back pain&#xa;"/>
+                <Property name="text" type="java.lang.String" value="Pollution of discarded technologies...&#xa;&#x9;- taints drinking water and farm land&#xa;&#x9;- disrupts aquatic environments&#xa;In 2020, 53.6 million tons of e-waste was created globally&#xa;&#xa;&#xa;Minerals, such as silver, have to be mined, which...&#xa;&#x9;- Deplete resources and damage the environment&#xa;&#x9;- Raise concerns for the miners&apos; safety&#xa;&#xa;&#xa;Increased use of technology can lead to...&#xa;&#x9;- Eye strain&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; &#x9;&#x9;&#x9;- Headaches&#xa;&#x9;- Altered sleeping patterns&#x9;&#x9;&#x9;- Feeling isolated&#xa;&#x9;- Back pain&#xa;"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -312,7 +312,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jQuestion7">
           <Properties>
-            <Property name="text" type="java.lang.String" value="How many tons of e-waste did the world produce in 2020?"/>
+            <Property name="text" type="java.lang.String" value="How many tons (in millions) of e-waste did the world produce in 2020?"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jQuestion8">

@@ -74,7 +74,7 @@ public class Action extends javax.swing.JFrame {
         jTextAreaPositive.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         jTextAreaPositive.setRows(5);
         jTextAreaPositive.setTabSize(2);
-        jTextAreaPositive.setText("We can limit the negative effect of technology on our health by...\n\t- Monitoring our time spent on devices and setting limits\n\t\t- turning off devices 1 hour before bed\n\t- Balancing out our lifestyle (ex. walking outside)\n\t- Maintain a healthy posture and placing monitors at eye level\n\n\n\nEnvironmental consequences can be mitigated when ...\n\t- We repurpose old devices/parts\n\t- Residences and businesses utilize recycling programs to \n\t   responsibly dispose e-waste\n\t- Turning off devices when not in use\n\t- Governments promote the production of electric vehicles and \n\t   installation of charging stations");
+        jTextAreaPositive.setText("We can limit the negative effects of technology on our health by...\n\t- Monitoring our time spent on devices and setting limits\n\t\t- turning off devices 1 hour before bed\n\t- Balancing out our lifestyle (ex. walking outside)\n\t- Maintain a healthy posture and placing monitors at eye level\n\n\n\nEnvironmental consequences can be mitigated when ...\n\t- We repurpose old devices/parts\n\t- Residences and businesses utilize recycling programs \n\t   (ex. Recycle My Electronics™ available across Canada)\n\t- Turning off devices when not in use\n\t- Governments promote the production of electric vehicles and \n\t   installation of charging stations");
         jScrollPaneIPositive.setViewportView(jTextAreaPositive);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/topic2/eyeLevel.jpg"))); // NOI18N
@@ -237,22 +237,23 @@ public class Action extends javax.swing.JFrame {
         jPanelResultLayout.setHorizontalGroup(
             jPanelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelResultLayout.createSequentialGroup()
-                .addContainerGap(30, Short.MAX_VALUE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 506, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29))
-            .addGroup(jPanelResultLayout.createSequentialGroup()
-                .addGap(231, 231, 231)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(107, Short.MAX_VALUE)
+                .addGroup(jPanelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelResultLayout.createSequentialGroup()
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 506, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelResultLayout.createSequentialGroup()
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(271, 271, 271))))
         );
         jPanelResultLayout.setVerticalGroup(
             jPanelResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelResultLayout.createSequentialGroup()
                 .addGap(66, 66, 66)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 148, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(69, 69, 69))
         );
 
         getContentPane().add(jPanelResult, "card5");
