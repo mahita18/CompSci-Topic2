@@ -59,46 +59,45 @@ public class Action extends javax.swing.JFrame {
         });
 
         jLabelInfo.setFont(new java.awt.Font("OCR A Extended", 0, 24)); // NOI18N
-        jLabelInfo.setText("Action");
+        jLabelInfo.setText("Action & Initiatives");
 
         jTextAreaPositive.setEditable(false);
         jTextAreaPositive.setBackground(new java.awt.Color(225, 255, 225));
         jTextAreaPositive.setColumns(20);
-        jTextAreaPositive.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextAreaPositive.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         jTextAreaPositive.setRows(5);
-        jTextAreaPositive.setText("Reduce Impact\nSetting time limits and balancing out your lifestyle\nTurning off devices 1 hour before bed\nTurning off devices when not in use\nMaintain a healthy posture and desk setup\n\nInitiatives\nRecycling Organizations  for businesses and homes to safely dispose electronic waste\nWaste is responsibly disposed\nPartner with Businesses, like Best Buy, have electronic recycling available\n");
+        jTextAreaPositive.setTabSize(2);
+        jTextAreaPositive.setText("We can limit the negative effect of technology on our health by...\n\t- Monitoring our time spent on devices\n\t\t- Phones allow users to set limits\n\t\t- It's recommended that we turn off devices 1 hour before bed\n\t- Balancing out our lifestyle (playing sports, walking outside)\n\t- Maintain a healthy posture and desk setup by placing monitors at eye level\n\t\t\t\nEnvironmental consequences can be mitigated by...\n\t- Reusing and repurposing old devices/parts\n\t- Residences and bussinesses utilizing recycling programs to responsibly dispose e-waste\nPartner with Businesses, like Best Buy, have electronic recycling available\nTurning off devices when not in use\n");
         jScrollPaneIPositive.setViewportView(jTextAreaPositive);
 
         javax.swing.GroupLayout jPanelInfoActionLayout = new javax.swing.GroupLayout(jPanelInfoAction);
         jPanelInfoAction.setLayout(jPanelInfoActionLayout);
         jPanelInfoActionLayout.setHorizontalGroup(
             jPanelInfoActionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelInfoActionLayout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addGroup(jPanelInfoActionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelInfoActionLayout.createSequentialGroup()
+                .addGroup(jPanelInfoActionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanelInfoActionLayout.createSequentialGroup()
-                        .addComponent(jScrollPaneIPositive, javax.swing.GroupLayout.PREFERRED_SIZE, 394, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
-                        .addComponent(jButtonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(16, 16, 16))
+                        .addGap(22, 22, 22)
+                        .addGroup(jPanelInfoActionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPaneIPositive, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanelInfoActionLayout.createSequentialGroup()
+                                .addComponent(jLabelInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 236, Short.MAX_VALUE))))
                     .addGroup(jPanelInfoActionLayout.createSequentialGroup()
-                        .addComponent(jLabelInfo)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addContainerGap(496, Short.MAX_VALUE)
+                        .addComponent(jButtonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(16, 16, 16))
         );
         jPanelInfoActionLayout.setVerticalGroup(
             jPanelInfoActionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelInfoActionLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabelInfo)
-                .addGroup(jPanelInfoActionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelInfoActionLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(16, 16, 16))
-                    .addGroup(jPanelInfoActionLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPaneIPositive, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(26, Short.MAX_VALUE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPaneIPositive, javax.swing.GroupLayout.DEFAULT_SIZE, 311, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jButtonInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16))
         );
 
         getContentPane().add(jPanelInfoAction, "card2");
@@ -128,7 +127,7 @@ public class Action extends javax.swing.JFrame {
 
         jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "true", "false" }));
 
-        jQuestion7.setText("jLabel3");
+        jQuestion7.setText("Fill In The Blank: Monitors should be placed at ________ level.");
 
         jQuestion8.setText("jLabel4");
 
@@ -145,7 +144,7 @@ public class Action extends javax.swing.JFrame {
                     .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanelQuizActionLayout.createSequentialGroup()
-                .addGap(262, 476, Short.MAX_VALUE)
+                .addGap(262, 490, Short.MAX_VALUE)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19))
             .addGroup(jPanelQuizActionLayout.createSequentialGroup()
@@ -153,14 +152,14 @@ public class Action extends javax.swing.JFrame {
                 .addGroup(jPanelQuizActionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelQuizActionLayout.createSequentialGroup()
                         .addGroup(jPanelQuizActionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jQuestion7, javax.swing.GroupLayout.PREFERRED_SIZE, 498, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanelQuizActionLayout.createSequentialGroup()
-                        .addGroup(jPanelQuizActionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jQuestion9)
                             .addComponent(jQuestion8, javax.swing.GroupLayout.PREFERRED_SIZE, 482, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanelQuizActionLayout.createSequentialGroup()
+                        .addGroup(jPanelQuizActionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4)
+                            .addComponent(jQuestion7, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(jPanelQuizActionLayout.createSequentialGroup()
                 .addGap(49, 49, 49)
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -179,7 +178,7 @@ public class Action extends javax.swing.JFrame {
                 .addComponent(jQuestion8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
                 .addComponent(jQuestion9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)

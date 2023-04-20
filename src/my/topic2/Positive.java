@@ -10,7 +10,7 @@ package my.topic2;
  */
 public class Positive extends javax.swing.JFrame {
     Result posResult;
-    String[] posAnswer = new String[3];
+    String[] posAnswer = {"online", "satellite", "true"};
     
     /**
      * Creates new form Info
@@ -18,7 +18,6 @@ public class Positive extends javax.swing.JFrame {
     public Positive(Result result1) {
         initComponents();
         posResult = result1;
-        String[] posAnswer = {"","","true"};
     }
 
     /**

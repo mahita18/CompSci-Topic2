@@ -13,8 +13,8 @@ public class Result {
     boolean[ ] isCorrect = new boolean[12];	
     int score;
     int currentQ;
-    String[] response = new String[3];
-    String[] answer = new String[3];
+    String[] response;
+    String[] answer;
     
     public Result(){
         score = 0;
@@ -26,12 +26,14 @@ public class Result {
     public void markQuiz(String[] res, String[] ans){
         response = res;
         answer = ans;
-        for (int z=0; z<3; z++){
-            if(response[z].equals(answer[z]))
+        int x = 0;
+        for (String item:response){            
+            if(item.equals(answer[x]))
                 isCorrect[currentQ]=true;
             else
                 isCorrect[currentQ]=false;
             currentQ++;
+            x++;
         }
         
     }
